@@ -1,0 +1,40 @@
+#btn-burger{
+    width: 70px;
+    height: 50px;
+    border: 5px solid #ccc;
+    cursor: pointer;
+    border-radius: 3px;
+    background: transparent;
+    margin-right: 18px;
+    display: none;
+}
+.linha{
+    width: 28px;
+    height: 4px;
+    background-color: #ccc;
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    transform-origin: center;
+}
+#btn-burger.ativar .linha:nth-child(1){
+    transform : translateY(9px) rotate(-55deg);
+    background-color: #ccc;
+}
+#btn-burger.ativar .linha:nth-child(3){
+    transform : translateY(-9px) rotate(55deg);
+    background-color:  #ccc;
+}
+#btn-burger.ativar .linha:nth-child(2){
+    /* qualquer das duas opções abaixo funcionam */
+    /* width: 0; */
+    opacity: 0;
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width:1200px){
+    
+    #btn-burger{
+        display: block;
+    }
+
+}

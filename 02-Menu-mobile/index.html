@@ -1,32 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>    
+    <!-- CSS PROJETO -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <!-- JS PROJETO -->
     <script src="script.js" defer></script>
-
+    <!-- FONT AWESOME -->    
+    <script src="https://kit.fontawesome.com/e08f3fd03f.js" crossorigin="anonymous" defer></script>
+    
     <title>Menu Mobile Animado</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo"><img src="" alt=""></img></div>
-            <div class="menu">
-                <nav>
-                    <a href="">Home</a>
-                    <a href="">Blog</a>
-                    <a href="">Sobre Nós</a>
-                    <a href="">Contato</a>
-                </nav>
-            </div>
+            <div class="logo"><a href="#"><img src="images/logo.png" alt=""></img></a></div>
+            
+            <!-- MENU -->            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>                        
+                </ul>
+            </nav>    
+            
+            <!-- BOTAO HAMBURGER -->
+            <button id="btn-burger" onclick="openMenu()">
+                <span class="linha"></span> 
+                <span class="linha"></span> 
+                <span class="linha"></span> 
+            </button>     
 
+            <!-- MENU-MOBILE -->
+            <nav class="menu-mobile" id="menu-mobile">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>                        
+                </ul>
+            </nav>
+
+            <!-- REDES SOCIAIS -->
             <div class="social">
-                <button><i class="fa-brands fa-intagram"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
                 <button><i class="fa-brands fa-facebook"></i></button>
                 <button><i class="fa-brands fa-youtube"></i></button>
             </div>
+
         </div>
     </header>
 </body>
